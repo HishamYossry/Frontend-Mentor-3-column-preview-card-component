@@ -1,0 +1,106 @@
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-family: ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin-top: 15%;
+  width: 50%;
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 30px 40px 30px;
+  background-color: var(--Bright-orange);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card-title h2 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.card-desc p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.card-button {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.card-button button {
+  padding: 12px 25px 12px 25px;
+  border-radius: 15px;
+  border: none;
+}
+
+.card-button button:hover {
+  background-color: var(--Bright-orange);
+  padding: 11px 24px 11px 24px;
+  border: 1px solid white;
+  color: white;
+}
+
+.card-suv {
+  background-color: var(--Dark-cyan);
+}
+
+.card-luxury {
+  background-color: var(--Very-dark-cyan);
+}
+
+.suv-button button:hover {
+  background-color: var(--Dark-cyan);
+}
+
+.luxury-button button:hover {
+  background-color: var(--Very-dark-cyanark-cyan);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    margin-top: 100px;
+    width: 95%;
+    gap: 0px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
